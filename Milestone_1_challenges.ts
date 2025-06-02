@@ -110,7 +110,20 @@ function perimeter(i: string, num: number): number{
   }
   return perimeter;
 }
-console.log(perimeter("s", 7));//28
+//console.log(perimeter("s", 7));//28
+
+//challenge 11 sum of even numbers
+function sumEvenNumbers(n:number): number {
+  let sum = 0;
+  for (let i = 0; i <= n; i++) {
+    if (i % 2 === 0) {
+      sum += i;
+    }
+  }
+  return sum;
+}
+console.log(sumEvenNumbers(6));//12
+
 
 
 
