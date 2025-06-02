@@ -169,6 +169,25 @@ function linearSearchAll(arr: number[], val: number): number[] {
     }
     return allIndices;
 }
-console.log(linearSearchAll([5, 3, 7, 1, 4, 7],7));//[ 2, 5 ]
-console.log(linearSearchAll([5, 3, 7, 1, 4],10));//
+//console.log(linearSearchAll([5, 3, 7, 1, 4, 7],7));//[ 2, 5 ]
+//console.log(linearSearchAll([5, 3, 7, 1, 4],10));//
+
+//challenge 14 count occurences
+type OccurrenceMap = {
+  [key: string]: number;
+};
+
+function occurrences(arr: string[]): OccurrenceMap {
+  let occ: OccurrenceMap = {};
+  for (let i = 0; i < arr.length; i++) {
+    const word = arr[i];
+    if (occ[word]) {
+      occ[word] += 1;
+    } else {
+      occ[word] = 1;
+    }
+  }
+  return occ;
+}
+console.log(occurrences(["apples", "bananas", "apples", "oranges", "apples"]));//{ apples: 3, bananas: 1, oranges: 1 }
 
