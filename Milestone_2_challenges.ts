@@ -189,5 +189,17 @@ function occurrences(arr: string[]): OccurrenceMap {
   }
   return occ;
 }
-console.log(occurrences(["apples", "bananas", "apples", "oranges", "apples"]));//{ apples: 3, bananas: 1, oranges: 1 }
+//console.log(occurrences(["apples", "bananas", "apples", "oranges", "apples"]));//{ apples: 3, bananas: 1, oranges: 1 }
+
+// Challenge 15: Remove duplicates
+function removeDuplicates(arr: number[]): number[] {
+    let uniqueArray: number[] = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (!uniqueArray.includes(arr[i])) {
+            uniqueArray.push(arr[i]);
+        }
+    }
+    return uniqueArray;
+}
+console.log(removeDuplicates([1, 2, 3, 2, 4, 1, 5]));//[ 1, 2, 3, 4, 5 ]
 
