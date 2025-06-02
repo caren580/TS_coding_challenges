@@ -65,4 +65,19 @@ function calculateBMI(weight:number, height:number):string {
         return `your BMI is ${BMI} -obese`;
     }
 }
-console.log(calculateBMI(62, 1.25));//your BMI is 39.68 - obese
+//console.log(calculateBMI(62, 1.25));//your BMI is 39.68 - obese
+
+//challenge 8 greeting based on time
+function greetuser(name:string, hour:number):string{
+    if (hour >= 5 && hour <= 11) {
+    return `good morning ${name}`;
+  } else if (hour >= 12 && hour <= 17) {
+    return `good afternoon ${name}`;
+  } else if (hour >= 18 && hour <= 21) {
+    return `good evening ${name}`;
+  } else {
+    return `good night ${name}`;
+  }
+
+}
+console.log(greetuser("caren", 15));//good afternoon caren
