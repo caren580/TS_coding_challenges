@@ -99,4 +99,37 @@ function differenceOddEven(arr: number[]): number {
     }
     return sumEven - sumOdd;
 }
-console.log(differenceOddEven([1, 2, 3, 4, 5, 6]));//3
+//console.log(differenceOddEven([1, 2, 3, 4, 5, 6]));//3
+
+//challenge 9 count truthy
+type myTypes = {
+  a: number,
+  b: string,
+  c: boolean,
+  d: number,
+  e: null
+};
+
+function countTruthy(obj: myTypes): number {
+  let count = 0;
+  const values = Object.values(obj);
+
+  for (let i = 0; i < values.length; i++) {
+    if (values[i]) {
+      count++;
+    }
+  }
+
+  return count;
+}
+//console.log(countTruthy({ a:0, b:"Hello", c:false, d:42, e:null}));//2
+
+//challenge 10 average of numbers
+function average(arr: number[]): number {
+    let total = 0;
+    for (let i = 0; i < arr.length; i++) {
+        total += arr[i];
+    }
+    return total / arr.length;
+}
+console.log(average([2, 4, 6, 8]));//5
