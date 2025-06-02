@@ -132,8 +132,19 @@ function powerUp(num: number, times: number = 0): number {
   }
   return result;
 }
-console.log(powerUp(2,3));//8
-console.log(powerUp(5,0));//1
+//console.log(powerUp(2,3));//8
+//console.log(powerUp(5,0));//1
+
+//challenge 13 factorial calculator
+function factorial(n: number): number {
+  let number = 1;
+  for (let i = 1; i <= n; i++) {
+    number *= i;
+  }
+  return number;
+}
+console.log(factorial(0));
+console.log(factorial(4));
 
 
 
