@@ -95,7 +95,22 @@ function fizzBuzzCheck(number: number): string {
     return number.toString();
   }
 }
-console.log(fizzBuzzCheck(3));//fizz
+//console.log(fizzBuzzCheck(3));//fizz
+
+//challenge 10 perimeter 2
+function perimeter(i: string, num: number): number{
+    let perimeter:number = 0;
+  switch (i) {
+    case "s":
+      return 4 * num;
+    case "c":
+      return 2 * 6.28 * num;
+    default:
+      return 0;
+  }
+  return perimeter;
+}
+console.log(perimeter("s", 7));//28
 
 
 
