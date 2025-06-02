@@ -14,7 +14,7 @@ function convert(minutes:number):number{
 function findPerimeter(length:number, width:number):number{
     return 2 * (length + width);
 }
-console.log(findPerimeter(3,2));//10
+//console.log(findPerimeter(3,2));//10
 
 // challenge 4 check negative
 function isNegative(number:number):boolean{
@@ -25,5 +25,16 @@ function isNegative(number:number):boolean{
     }
 
 }
-console.log(isNegative(-4))//true
-console.log(isNegative(2))//false
+//console.log(isNegative(-4))//true
+//console.log(isNegative(2))//false
+
+//challenge 5 can i drive
+function canDrive(name:string, age:number):void{
+    if(age >=18){
+        console.log(`${name} is old enough to drive`)
+    } else{
+        console.log(`${name} is not old enough to drive yet`)
+    }
+}
+canDrive("Caren",22)//Caren is old enough to drive
+canDrive("John", 16)//John is not old enough to drive yet
