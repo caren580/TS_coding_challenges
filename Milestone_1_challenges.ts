@@ -36,5 +36,18 @@ function canDrive(name:string, age:number):void{
         console.log(`${name} is not old enough to drive yet`)
     }
 }
-canDrive("Caren",22)//Caren is old enough to drive
-canDrive("John", 16)//John is not old enough to drive yet
+//canDrive("Caren",22)//Caren is old enough to drive
+//canDrive("John", 16)//John is not old enough to drive yet
+
+//challenge 6 Largest number
+function findLargest(a:number, b:number, c:number):number{
+    if(a>b && a<c){
+        return a
+    }else if(b>a && b>c){
+        return b
+    }else{
+        return c
+    }
+}
+console.log(findLargest(5,2,9));//9
+console.log(findLargest(-2,-3,-8));//-8
