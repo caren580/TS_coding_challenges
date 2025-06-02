@@ -42,4 +42,16 @@ function findWinner(arr: Candidate[]): Candidate {
   return winner;
 }
 
-console.log(findWinner(candidates)); //{name:'Bob,votes:75}
+//console.log(findWinner(candidates)); //{name:'Bob,votes:75}
+
+//challenge 4 longest word
+function findLongestWord(arr: string[]): string {
+    let longest = "";
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i].length > longest.length) {
+            longest = arr[i];
+        }
+    }
+    return longest;
+}
+console.log(findLongestWord(["apple", "banana", "pear", "grapefruit"]));//grapefruit
