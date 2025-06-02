@@ -66,4 +66,10 @@ type Person = {
 function countProperties(obj: Person): number {
   return Object.keys(obj).length;
 }
-console.log(countProperties({ name :"alice", age:25 , city: "paris"}));//3
+//console.log(countProperties({ name :"alice", age:25 , city: "paris"}));//3
+
+//challenge 6 filter by length
+function filterByLength(arr: string[], minLength: number): string[] {
+    return arr.filter(i => i.length >= minLength);
+}
+console.log(filterByLength(["cat", "giraffe", "hippo", "dog", "elephant" ] ,5));//[ 'giraffe', 'hippo', 'elephant' ]
