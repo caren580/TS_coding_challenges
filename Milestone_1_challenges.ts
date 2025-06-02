@@ -80,4 +80,22 @@ function greetuser(name:string, hour:number):string{
   }
 
 }
-console.log(greetuser("caren", 15));//good afternoon caren
+//console.log(greetuser("caren", 15));//good afternoon caren
+
+//challenge 9 fizz buzz
+
+function fizzBuzzCheck(number: number): string {
+  if (number % 3 === 0 && number % 5 === 0) {
+    return "fizzbuzz";
+  } else if (number % 3 === 0) {
+    return "fizz";
+  } else if (number % 5 === 0) {
+    return "buzz"; 
+  } else {
+    return number.toString();
+  }
+}
+console.log(fizzBuzzCheck(3));//fizz
+
+
+
