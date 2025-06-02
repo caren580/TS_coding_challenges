@@ -16,3 +16,14 @@ function findPerimeter(length:number, width:number):number{
 }
 console.log(findPerimeter(3,2));//10
 
+// challenge 4 check negative
+function isNegative(number:number):boolean{
+    if(number<0){
+        return true
+    }else{
+        return false
+    }
+
+}
+console.log(isNegative(-4))//true
+console.log(isNegative(2))//false
