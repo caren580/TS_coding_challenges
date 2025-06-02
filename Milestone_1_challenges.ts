@@ -143,8 +143,21 @@ function factorial(n: number): number {
   }
   return number;
 }
-console.log(factorial(0));
-console.log(factorial(4));
+//console.log(factorial(0));
+//console.log(factorial(4));
+
+//challenge 14 multiple sum
+function sumMultiples(n: number, divisor: number): number {
+  let sum = 0;
+  for (let i = 1; i <= n; i++) {
+    if (i % divisor === 0) {
+      sum += i;
+    }
+  }
+  return sum;
+}
+console.log(sumMultiples(10,2));
+console.log(sumMultiples(15,3));
 
 
 
