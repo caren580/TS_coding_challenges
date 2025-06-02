@@ -143,6 +143,19 @@ function linearSearch(arr: number[], val: number): number {
     }
     return -1;
 }
-console.log(linearSearch([5, 3, 7, 1, 4], 7));//2
-console.log(linearSearch([5, 3, 7, 1, 4], 10));//-1
+//console.log(linearSearch([5, 3, 7, 1, 4], 7));//2
+//console.log(linearSearch([5, 3, 7, 1, 4], 10));//-1
+
+//challenge 12 reverse linear search
+function reverseLinearSearch(arr: number[], val: number): number {
+    let lastIndex = -1;
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] === val) {
+            lastIndex = i;
+        }
+    }
+    return lastIndex;
+}
+console.log(reverseLinearSearch([5, 3, 7, 1, 4, 7], 7));//5
+console.log(reverseLinearSearch([5, 3, 7, 1,4],10));//-1
 
