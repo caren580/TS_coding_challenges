@@ -49,5 +49,20 @@ function findLargest(a:number, b:number, c:number):number{
         return c
     }
 }
-console.log(findLargest(5,2,9));//9
-console.log(findLargest(-2,-3,-8));//-8
+//console.log(findLargest(5,2,9));//9
+//console.log(findLargest(-2,-3,-8));//-8
+
+//challenge 7 BMI calculator
+function calculateBMI(weight:number, height:number):string {
+    let BMI = weight/ (height * height)
+    if(BMI <= 18.5){
+        return `your BMI is ${BMI} - underweight`;
+    }else if (BMI >= 18.5 && BMI <= 24.5) {
+        return `your BMI is ${BMI}- normalweight`;
+    }else if (BMI >= 25 && BMI <= 29.9) {
+        return `your BMI is ${BMI} - overweight`;
+    }else{
+        return `your BMI is ${BMI} -obese`;
+    }
+}
+console.log(calculateBMI(62, 1.25));//your BMI is 39.68 - obese
