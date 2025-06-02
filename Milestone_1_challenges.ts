@@ -156,8 +156,20 @@ function sumMultiples(n: number, divisor: number): number {
   }
   return sum;
 }
-console.log(sumMultiples(10,2));
-console.log(sumMultiples(15,3));
+//console.log(sumMultiples(10,2));
+//console.log(sumMultiples(15,3));
+
+//challenge 15 sum of digitss
+function sumDigits(num: number): number {
+  let sum = 0;
+  while (num > 0) {
+    sum += num % 10;
+    num = Math.floor(num / 10);
+  }
+  return sum;
+}
+console.log(sumDigits(123));//6
+console.log(sumDigits(4567));//22
 
 
 
