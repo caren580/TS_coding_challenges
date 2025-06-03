@@ -122,7 +122,7 @@ function reverseLinearSearch(arr, val) {
 //console.log(reverseLinearSearch([5, 3, 7, 1, 4, 7], 7));//5
 //console.log(reverseLinearSearch([5, 3, 7, 1,4],10));//-1
 //challenge 13 linear search all indices
-function linearSearchAll(arr, val) {
+function linearSearchAll(arr, val){
     var allIndices = [];
     for (var i = 0; i < arr.length; i++) {
         if (arr[i] === val) {
@@ -149,7 +149,7 @@ function occurrences(arr) {
 function removeDuplicates(arr) {
     var uniqueArray = [];
     for (var i = 0; i < arr.length; i++) {
-        if (!uniqueArray.includes(arr[i])) {
+        if (uniqueArray.indexOf(arr[i])===-1) {
             uniqueArray.push(arr[i]);
         }
     }
